@@ -1,0 +1,33 @@
+1. 字节流、过滤流、字符流、对象流
+
+将Student对象(属性：int id, String name(不多于10个字符),int age,double grade)写入文件、读出文件，分别尝试使用以下方式实现：
+
+(1)DataInputStream, DataOutputStream (必选)；
+
+(2)Scanner(或BufferedReader), PrintWriter(可选)；
+
+(3)RandomAccessFile(较难，选作)；
+
+(4)ObjectInputStream, ObjectOutputStream(简单)。
+
+问题：1、2、3、4方法生成的文件大小各是多少？尝试分析1和2输出的文件大小。
+
+要求：最后要以方法的形式输出学生（使用方法重载），如下这种形式
+
+public static void writeStudent(Student s, DataOutputStream dos){};
+
+2. 文件管理
+
+编写一个GUI程序，可以根据指定目录，统计该目录下文件的数目、文件夹的数目并显示出来。
+
+要求：使用JFileChooser控件实现选取目录，结果不要选择在控制台中输出。
+
+提示：使用File类，查jdk文档File类的方法。
+
+3. 二进制文件查看器
+
+模仿UltraEdit/EditPlus二进制文件编辑模式，编写一个简单的二进制文件查看器（控制台或GUI均可），参考附件EditPlus_Hex.png图片。
+
+其中，左边为当前行的首地址，中间是每行16个字节的16进制字符，每字节间用一个空格分隔，8个字节之后用两个字节分隔，右边为这16字节的ASCII码表示。不足16字节的行，仍然要保持这三部分的对齐。
+
+要求：实现基本的二进制查看即可，编辑不作要求。
